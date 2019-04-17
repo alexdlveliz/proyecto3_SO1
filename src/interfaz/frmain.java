@@ -20,7 +20,7 @@ public class frmain extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         btncerrar.setBackground(new Color(0,0,0,0));
-        
+        //jPanel1.setBackground(new Color(0,0,0,0));
     }
 
     /**
@@ -33,7 +33,20 @@ public class frmain extends javax.swing.JFrame {
     private void initComponents() {
 
         btncerrar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        rSMaterialButtonRectangle1 = new rojerusan.RSMaterialButtonRectangle();
+        rSMaterialButtonRectangle2 = new rojerusan.RSMaterialButtonRectangle();
+        rSMaterialButtonRectangle3 = new rojerusan.RSMaterialButtonRectangle();
+        rSMaterialButtonCircle1 = new rojerusan.RSMaterialButtonCircle();
+        espera = new javax.swing.JLabel();
+        pensando = new javax.swing.JLabel();
+        comiendo = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        rSMaterialButtonCircle2 = new rojerusan.RSMaterialButtonCircle();
+        rSMaterialButtonCircle3 = new rojerusan.RSMaterialButtonCircle();
+        rSMaterialButtonCircle4 = new rojerusan.RSMaterialButtonCircle();
+        rSMaterialButtonCircle5 = new rojerusan.RSMaterialButtonCircle();
+        rSMaterialButtonCircle6 = new rojerusan.RSMaterialButtonCircle();
+        fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(960, 540));
@@ -54,8 +67,68 @@ public class frmain extends javax.swing.JFrame {
         });
         getContentPane().add(btncerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, 60, 60));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo2.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 540));
+        rSMaterialButtonRectangle1.setBackground(new java.awt.Color(0, 0, 255));
+        getContentPane().add(rSMaterialButtonRectangle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 100, 40));
+
+        rSMaterialButtonRectangle2.setBackground(new java.awt.Color(255, 51, 51));
+        getContentPane().add(rSMaterialButtonRectangle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 100, 40));
+
+        rSMaterialButtonRectangle3.setBackground(new java.awt.Color(0, 255, 0));
+        getContentPane().add(rSMaterialButtonRectangle3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 470, 100, 40));
+
+        rSMaterialButtonCircle1.setBackground(new java.awt.Color(0, 153, 255));
+        rSMaterialButtonCircle1.setForeground(new java.awt.Color(51, 0, 51));
+        rSMaterialButtonCircle1.setText("Iniciar");
+        getContentPane().add(rSMaterialButtonCircle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 430, 250, -1));
+
+        espera.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        espera.setText("En espera");
+        espera.setName("espera"); // NOI18N
+        getContentPane().add(espera, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, -1, -1));
+
+        pensando.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        pensando.setText("Pensando");
+        pensando.setName("pensando"); // NOI18N
+        getContentPane().add(pensando, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, -1, -1));
+
+        comiendo.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        comiendo.setText("Comiendo");
+        comiendo.setName("comiendo"); // NOI18N
+        getContentPane().add(comiendo, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 480, -1, -1));
+
+        jPanel1.setOpaque(false);
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        rSMaterialButtonCircle2.setBackground(new java.awt.Color(255, 51, 51));
+        rSMaterialButtonCircle2.setText("Filósofo 1");
+        rSMaterialButtonCircle2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel1.add(rSMaterialButtonCircle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 110, -1, -1));
+
+        rSMaterialButtonCircle3.setBackground(new java.awt.Color(255, 51, 51));
+        rSMaterialButtonCircle3.setText("Filósofo 1");
+        rSMaterialButtonCircle3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel1.add(rSMaterialButtonCircle3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 10, -1, -1));
+
+        rSMaterialButtonCircle4.setBackground(new java.awt.Color(255, 51, 51));
+        rSMaterialButtonCircle4.setText("Filósofo 1");
+        rSMaterialButtonCircle4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel1.add(rSMaterialButtonCircle4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, -1, -1));
+
+        rSMaterialButtonCircle5.setBackground(new java.awt.Color(255, 51, 51));
+        rSMaterialButtonCircle5.setText("Filósofo 1");
+        rSMaterialButtonCircle5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel1.add(rSMaterialButtonCircle5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, -1, -1));
+
+        rSMaterialButtonCircle6.setBackground(new java.awt.Color(255, 51, 51));
+        rSMaterialButtonCircle6.setText("Filósofo 1");
+        rSMaterialButtonCircle6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel1.add(rSMaterialButtonCircle6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 870, 360));
+
+        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo2.jpg"))); // NOI18N
+        fondo.setName("fondo"); // NOI18N
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -101,6 +174,19 @@ public class frmain extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btncerrar;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel comiendo;
+    private javax.swing.JLabel espera;
+    private javax.swing.JLabel fondo;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel pensando;
+    private rojerusan.RSMaterialButtonCircle rSMaterialButtonCircle1;
+    private rojerusan.RSMaterialButtonCircle rSMaterialButtonCircle2;
+    private rojerusan.RSMaterialButtonCircle rSMaterialButtonCircle3;
+    private rojerusan.RSMaterialButtonCircle rSMaterialButtonCircle4;
+    private rojerusan.RSMaterialButtonCircle rSMaterialButtonCircle5;
+    private rojerusan.RSMaterialButtonCircle rSMaterialButtonCircle6;
+    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle1;
+    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle2;
+    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle3;
     // End of variables declaration//GEN-END:variables
 }
